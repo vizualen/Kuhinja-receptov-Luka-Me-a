@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #add8e6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* robovi tabele se zdruzijo */
+    table-layout: fixed; /* stolpci imajo bolj enakomerno sirino */
+}
+
+td {
+    padding: 25px;
+}
+
+.zgornja-vrstica td {
+    background-color: #8fc6d8;
+}
+
+.naslov {
+    width: 30%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.meni {
+    padding-top: 32px;
+}
+
+.prijava {
+    text-align: right;
+    padding-top: 32px;
+}
+
+a {
+    background-color: #f4d8c5;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 8px 15px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* link je v isti vrstici, lahko pa ima padding */
+}
+
+button {
+    background-color: #f4d8c5;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: center;
+    width: 160px;
+    display: block; /* gumb gre v svojo vrstico */
+}
+
+.prijavljen {
+    background-color: #8fc6d8;
+    border: 1px solid #2f6f91;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 8px 12px;
+    margin: 4px;
+    display: inline-block; /* ostane v isti vrstici */
+}
+
+.kategorije {
+    background-color: #1d6991;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.recepti {
+    background-color: #03496e;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.kategorije a {
+    width: 15%;
+}
+
+.recepti a {
+    width: 25%;
+}
+
+.besedilo {
+    text-align: center;
+    padding: 40px;
+    line-height: 1.6; /* vec prostora med vrsticami */
+}
+
+.opis {
+    display: inline-block; /* okvir se obravnava kot element v vrstici */
+    background-color: #065f8f;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    padding: 18px;
+    margin-left: 35px;
+    width: 85%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.osnovni-recepti {
+    display: inline-block; /* okvir se obravnava kot element v vrstici */
+    background-color: #5486b8;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    padding: 20px 35px;
+    margin-top: -45px;
+}
+
+.osnovni-recepti a {
+    display: block; /* vsak link je v svoji vrstici */
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 118px;
+}
+
+b {
+    display: inline-block; /* lahko ima margin in ostane v vrstici */
+    margin: 4px 40px 4px 4px;
+}
+
+.slika {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.slika img {
+    width: 80%;
+    max-width: 800px; /* najvecja sirina slike */
+    height: auto;
+}
+
+.recept-besedilo {
+    vertical-align: top; /* vsebina je poravnana zgoraj */
+}
+
+.recept-okvir {
+    background-color: #8fc6d8;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    padding: 25px;
+    line-height: 1.6; /* vec prostora med vrsticami */
+}
+
+.recept-okvir h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.recept-okvir h3 {
+    color: #03496e;
+}
+
+.slika-prostor {
+    background-color: #8fc6d8;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    text-align: center;
+    height: 280px;
+    font-size: 24px;
+}
+
+.komentar-prostor {
+    background-color: #8fc6d8;
+    border: 2px solid #2f6f91;
+    text-align: center;
+    height: 200px;
+    font-size: 20px;
+    vertical-align: middle; /* vsebina je navpicno na sredini */
+}
+
+.slika-recepta {
+    background-color: #8fc6d8;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    text-align: center;
+    height: 280px;
+    vertical-align: middle; /* vsebina je navpicno na sredini */
+}
+
+.slika-recepta img {
+    max-width: 100%; /* slika ni sirsa od prostora */
+    max-height: 400px; /* slika ni previsoka */
+    width: auto;
+    height: auto;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.prijava-stran {
+    text-align: center;
+    padding: 60px;
+}
+
+.prijava-okvir {
+    display: inline-block; /* okvir ostane na sredini kot manjsi blok */
+    background-color: #8fc6d8;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    padding: 30px 45px;
+    width: 320px;
+    text-align: left;
+}
+
+.prijava-okvir h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.prijava-okvir label {
+    display: block; /* napis je v svoji vrstici */
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.prijava-okvir input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.prijava-sporocilo {
+    background-color: #f4d8c5;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 10px;
+    text-align: center;
+}
+
+.komentar-obrazec {
+    padding: 15px;
+    text-align: left;
+}
+
+.komentar-obrazec h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.komentar-obrazec label {
+    display: block; /* napis je v svoji vrstici */
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.komentar-obrazec textarea {
+    width: 100%;
+    height: 70px;
+}
+
+.komentar-obrazec select {
+    width: 100%;
+    padding: 6px;
+}
+
+.komentar {
+    background-color: #f4d8c5;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.admin-gumbi {
+    text-align: center;
+}
+
+.dodaj-okvir {
+    display: inline-block; /* okvir ostane na sredini kot manjsi blok */
+    background-color: #8fc6d8;
+    border: 2px solid #2f6f91;
+    border-radius: 10px; /* zaobljeni robovi */
+    padding: 30px 45px;
+    width: 760px;
+    text-align: left;
+}
+
+.dodaj-okvir h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.dodaj-okvir label {
+    display: block; /* napis je v svoji vrstici */
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.dodaj-okvir input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.dodaj-okvir select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.dodaj-okvir textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    height: 100px;
+}
+
+.recept-kartica {
+    background-color: #f4d8c5;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 10px;
+    display: inline-block; /* kartice so lahko ena zraven druge */
+    width: 260px;
+    min-height: 310px;
+    margin: 15px;
+    vertical-align: top; /* kartice so poravnane zgoraj */
+    text-align: center;
+}
+
+.recept-kartica img {
+    width: 220px;
+    height: 140px;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.filter-obrazec {
+    background-color: #f4d8c5;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.filter-obrazec label {
+    display: inline-block; /* napis je lahko v isti vrstici kot polje */
+    margin: 6px 4px 6px 0;
+    font-weight: bold;
+}
+
+.filter-obrazec select {
+    padding: 7px;
+    margin: 6px 8px 6px 0;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.filter-obrazec input {
+    padding: 7px;
+    margin: 6px 8px 6px 0;
+    border: 1px solid black;
+    border-radius: 8px; /* zaobljeni robovi */
+}
+
+.filter-obrazec button {
+    display: inline-block; /* gumb je v isti vrstici */
+    margin: 6px 0;
+    padding: 8px 18px;
+}
+
+.filter-obrazec a {
+    margin-left: 8px;
+}
+
+.viri-gumbi {
+    text-align: center;
+}
+
+.dodaj-tabela {
+    width: 100%;
+    table-layout: fixed; /* stolpci v tabeli imajo stalno sirino */
+}
+
+.dodaj-tabela td {
+    padding: 8px;
+    vertical-align: top; /* vsebina celice je zgoraj */
+}
+
+.sestavina-vrstica {
+    margin-bottom: 8px;
+}
+
+.sestavina-vrstica input {
+    width: 28%;
+}
